@@ -46,7 +46,7 @@ def check_line(string):
             pass
 
 if __name__ == "__main__":
-    data = open('data_day2.txt', 'r').read().split('\n')
+    data = open('day2_input.txt', 'r').read().split('\n')
     output = [[idx,check_line(d)] for idx, d in enumerate(data)]
     # Sum the first elements of sublists where the second element is not None
     result_sum = sum(sublist[0]+1 for sublist in output if sublist[1] is not None)
