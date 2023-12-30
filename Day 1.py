@@ -54,7 +54,7 @@ if __name__ == "__main__":
 
     #second puzzle
 
-    input_text = list(open('day1-input copy.txt', 'r').read().split('\n'))
+    input_text = list(open('day1-input.txt', 'r').read().split('\n'))
     output_convert = [find_numbers_in_english(line) for line in input_text]
     result = [extract_first_number(line) for line in output_convert]
     res = sum([int(res[0]+res[1]) for res in result])
